@@ -168,3 +168,29 @@ small {
   font-size:.75em;
   font-style: italic;
 }
+
+img {
+	display:block;
+	width:100%;
+  }
+
+  footer a, footer a:visited, footer a:focus, footer svg:hover {
+	color:var(--yellow);
+	stroke:var(--yellow);
+  }
+
+  a, a:visited, a:focus {
+	color:var(--red);
+  }
+  
+  a, a:visited, a:focus, a:active {
+	color:var(--blue);
+  }
+
+#circle-clip {
+	clip-path: circle(50px at center);
+	}
+
+	.active-page{
+		border-bottom: solid 2px var(--black);
+	}
