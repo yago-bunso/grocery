@@ -90,14 +90,6 @@ table {
 	border-spacing: 0;
 }
 /* ------------------- GLOBAL STYLES  ------------------- */
-h1, h2, h3, a, p, dt, dd, p, label, address, small {
-    color: var(--black);
-    font-family: 'Public Sans', sans-serif;
-}
-h1, h2, h3 {
-    font-size: 3em;
-}
-
 header, footer {
     width: 100%;
 }
@@ -105,11 +97,74 @@ header, footer {
 header {
     background-color: var(--white);
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:2fr 5fr 1fr 1fr; 
 }
 
 footer {
     height: auto;
     text-align: left;
     padding-left: 3rem;
+}
+nav ul {
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+}
+
+nav a, header svg {
+  color: var(--black);
+  padding: 5px;
+  text-decoration:none;
+}
+nav a:hover, header svg:hover {
+  stroke: var(--yellow);
+  color: var(--yellow);
+}
+
+section {
+  padding: 5%;
+}
+
+h1 {
+  margin: 20%;
+}
+h1, h2, h3, a, p, dt, dd, p, label, address, small {
+    color: var(--black);
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.5em;
+}
+
+h1, h2, nav li {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 2em;
+}
+
+nav li {
+  font-size: 1em;
+}
+
+.sr-only{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#menu {
+  visibility:hidden;
+  height: 0;
+}
+
+h2 {
+  font-size: 2em;  
+}
+
+p {
+  min-height:150px;
+}
+
+small {
+  font-size:.75em;
+  font-style: italic;
 }
