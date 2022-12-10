@@ -91,6 +91,20 @@ table {
 }
 /* ------------------- GLOBAL STYLES  ------------------- */
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 header, footer {
     width: 100%;
 }
@@ -161,6 +175,10 @@ h2, h3, p, dt, dd, p, label, address, small {
     line-height: 1.5em;
 }
 
+h3 {
+  padding: 10px;
+}
+
 a{
 color: var(--black);
 font-family: 'Public Sans', sans-serif;
@@ -211,9 +229,10 @@ h2 {
 }
 
 p {
-  width: 625px;
+  width: 775px;
   margin: 0 auto;
   text-align: center;
+  font-size: 1.5em;
 }
 
 small {
@@ -294,11 +313,36 @@ background-color: var(--brown);
 color:white;
 }
 
+#coupons dt, #coupons dd {
+  font-size: 1.3em;
+}
+
+#coupons h2 {
+  grid-area: h2;
+}
+
+#coupons dt {
+  grid-area: expire;
+  text-align: right;
+}
+
+.coupon-details dd {
+  grid-area: desc;
+  padding: 10px;
+}
+
 #coupons p, #coupons h2, #coupons dd, #coupons dt, footer p, footer h2, footer address, footer small{
   color:black;
   }
 
-#dressing img, #honey img, #marinara img, #mustard img {
+.coupon-details {
+display: grid;
+grid-template-areas: 
+"h2 expire"
+"desc desc";
+}
+
+picture img {
   width: 50%;
   height: auto;
 }
@@ -318,6 +362,7 @@ color:white;
 
 
 
+
 picture {
     display: flex;
     align-items: center;
@@ -329,33 +374,34 @@ picture {
 .saveMoney {
   font-weight: 800;
   font-size: 30px;
-  color: var(--black);
   background-color: var(--green);
   padding: 0px 10px;
-  width: 100px;
+  width: 103px;
   position: relative;
-  top: 45px;
-  left: -276px;
+  top: 57px;
+  right: 270px;
   margin: 0 auto;
 }
 
-button {
-  padding: 0px 50px;
+.button {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  padding: 5px 60px;
   font-family: 'Public Sans', sans-serif;
   font-size: 1em;
   font-weight: 800;
   background-color: var(--white);
   color:  var(--green);
+  width: 194px;
+  height: 34px;
 }
 
-button img{
-  position: relative;
-  right: 30px;
-  stroke:  var(--green)
+
+
+.button img{
+  width: 24px;
+  height: auto;
 }
 
 form {
@@ -386,17 +432,17 @@ input {
 #submit {
   margin: 0 auto;
   position: relative;
-  left: 270px;
+  left: 296px;
   width: 150px;
   top: 10px;
-background-color: var(--black);
+background-color: var(--blue);
 color: var(--white);
 padding: 2px 50px;
 font-family: 'Public Sans';
 }
 
 h1:focus, #submit:focus, footer a:focus, nav a:focus, .icon-tabler-shopping-cart:focus,
- .view-more-btn:focus, a.view-more-btn:focus, button:focus{
+ .view-more-btn:focus, a.view-more-btn:focus, .button:focus{
   background-color: var(--red);
   border: solid 2px var(--red);
   stroke: var(--red);
@@ -424,7 +470,7 @@ header svg {
   border: solid 2px var(--black);
   border-radius: 50%;
   background-color: var(--white);
-  width: 15px;
+  width: 20px;
   height: auto;
   padding: 10px;
   margin: 10px;
