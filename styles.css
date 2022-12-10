@@ -90,6 +90,7 @@ table {
 	border-spacing: 0;
 }
 /* ------------------- GLOBAL STYLES  ------------------- */
+
 header, footer {
     width: 100%;
 }
@@ -97,14 +98,23 @@ header, footer {
 header {
     background-color: var(--white);
     display:grid;
+    align-items: center;
     grid-template-columns:2fr 5fr 1fr 1fr; 
 }
 
 footer {
     height: auto;
     text-align: left;
-    padding-left: 3rem;
+    padding: 3rem;
+    background-color: var(--light-grey);
+  display: grid;
+  grid-template-areas: 
+  "h2 socmed"
+  "address socmed"
+  "small socmed";
+  grid-gap: 20px;
 }
+
 nav ul {
   display: grid;
   grid-template-columns:repeat(5, 1fr);
@@ -126,20 +136,44 @@ section {
 
 h1 {
   margin: 20%;
+  color: var(--black);
+  font-family: 'Public Sans', sans-serif;
+  font-size:1em;
+  font-weight: 700;
 }
-h1, h2, h3, a, p, dt, dd, p, label, address, small {
+h2, h3, p, dt, dd, p, label, address, small {
     color: var(--black);
     font-family: 'Public Sans', sans-serif;
     line-height: 1.5em;
 }
 
-h1, h2, nav li {
-  font-family: 'Public Sans', sans-serif;
-  font-size: 2em;
+a{
+color: var(--black);
+font-family: 'Public Sans', sans-serif;
+line-height: 1.5em;
+text-decoration: none
 }
+
+h2, nav li {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 3em;
+}
+
+body h2 {
+  text-align: center;
+}
+
+#weekly-ad h2, #weekly-ad p {
+  color: var(--white);
+  text-shadow: 5px 5px 10px var(--black);
+  padding: 10px 20px;
+}
+
 
 nav li {
   font-size: 1em;
+  padding: 18px;
+  white-space: nowrap;
 }
 
 .sr-only{
@@ -151,6 +185,10 @@ nav li {
   overflow: hidden;
 }
 
+header img {
+  stroke: var(--black);
+}
+
 #menu {
   visibility:hidden;
   height: 0;
@@ -158,10 +196,13 @@ nav li {
 
 h2 {
   font-size: 2em;  
+  font-weight: 800;
 }
 
 p {
-  min-height:150px;
+  width: 625px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 small {
@@ -169,28 +210,249 @@ small {
   font-style: italic;
 }
 
-img {
+main img {
 	display:block;
 	width:100%;
   }
 
-  footer a, footer a:visited, footer a:focus, footer svg:hover {
-	color:var(--yellow);
-	stroke:var(--yellow);
+  footer a, footer a:visited, footer a:focus, footer img:hover {
+	color:var(--green);
+	stroke:var(--green);
   }
 
-  a, a:visited, a:focus {
-	color:var(--red);
-  }
-  
-  a, a:visited, a:focus, a:active {
-	color:var(--blue);
-  }
-
-#circle-clip {
-	clip-path: circle(50px at center);
-	}
 
 	.active-page{
 		border-bottom: solid 2px var(--black);
 	}
+
+#weekly-ad {
+  background-image: url(./images/hero-800w.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -15em;
+  height: 300px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+#coupons svg {
+  stroke: var(--black);
+}
+
+#shop img {
+  width: 10em;
+  border-radius: 50%;
+}
+
+footer svg {
+  stroke: var(--black);
+}
+
+footer h2 {
+  text-align: left; 
+}
+
+.view-more-btn{
+  background-color: var(--blue);
+  padding: 10px 70px;
+}
+
+.view-more-btn:hover{
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+a.view-more-btn {
+  color: var(--white);
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+.shop-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  padding: 50px 0px;
+  justify-items: center;
+}
+
+#coupons {
+background-color: var(--light-grey);
+}
+
+#dressing img, #honey img, #marinara img, #mustard img {
+  width: 50%;
+  height: auto;
+}
+
+.coupons-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 50px 0px;
+  justify-items: center;
+}
+
+.coupons-grid-container h2 {
+  text-align: left;
+}
+
+picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--black);
+}
+
+.saveMoney {
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 0px 10px;
+  width: 100px;
+  position: relative;
+  top: 45px;
+  left: -259px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 60px;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1em;
+}
+
+button img{
+  position: relative;
+  right: 30px;
+}
+
+form {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+}
+
+label, input{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 10px;
+}
+
+input {
+  padding: 5px 60px 5px 0px;
+}
+
+
+.form-input {
+  display: inline-block;
+}
+
+#form-container {
+  padding-top: 50px;
+}
+
+#submit {
+  margin: 0 auto;
+  position: relative;
+  left: 270px;
+  width: 150px;
+  top: 10px;
+background-color: var(--black);
+color: var(--white);
+padding: 2px 50px;
+font-family: 'Public Sans';
+}
+
+.socmed-icons img{
+  border: solid 2px var(--black);
+  border-radius: 50%;
+  background-color: var(--white);
+  width: 15px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer h2 {
+  grid-area: h2;
+}
+
+footer address{
+  grid-area: address;
+}
+
+footer small {
+  grid-area: small;
+}
+
+.socmed-icons {
+  grid-area: socmed;
+}
+
+
+
+
+
+  /*--------------MEDIA QUERIES------------------------*/
+
+  @media screen and (max-width:320px) {
+    header {
+      grid-template-columns: 8fr 1fr 0fr 1fr;
+      height:75px;
+    }
+
+    h1 {
+      margin: 20px;
+    }
+
+    nav {
+      visibility: hidden;
+      height: 0px;
+      width: 0px;
+    }
+    #menu {
+      visibility: visible;
+      position:relative;
+      bottom: 13px;
+    }
+
+    header img {
+      height: 20px;
+      width: 20px;
+    }
+
+    #weekly-ad {
+      background-image: url(./images/hero-800w.jpg);
+      background-size: cover;
+      background-position-y: 0em;
+      background-position-x: -24em;
+      height: 503px;    
+  }
+
+  #weekly-ad h2 {
+    text-align: left;
+    position: relative;
+    top: 196px;
+}
+
+#weekly-ad p {
+  text-align: left;
+  position: relative;
+  top: 198px;
+}
+
+#weekly-ad a {
+  position: relative;
+  top: 198px;
+  width: auto;
+}
+  }
