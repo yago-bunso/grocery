@@ -333,7 +333,7 @@ color:white;
 }
 
 #coupons p, #coupons h2, #coupons dd, #coupons dt, footer p, footer h2, footer address, footer small{
-  color:black;
+  color:var(--white);
   }
 
 .coupon-details {
@@ -419,6 +419,7 @@ label, input{
 
 input {
   padding: 2% 0%;
+  border: solid 2px black;
 }
 
 
@@ -437,16 +438,18 @@ input {
   left: 24%;
   background-color: var(--blue);
   color: var(--white);
-  padding: 2px 50px;
+  padding: 5px 50px;
   font-family: 'Public Sans';
+  border: none;
 }
 
 h1:focus, #submit:focus, footer a:focus, nav a:focus, .icon-tabler-shopping-cart:focus,
- .view-more-btn:focus, a.view-more-btn:focus, .button:focus{
+ .view-more-btn:focus, a.view-more-btn:focus, .button:focus, #shop a:focus{
   background-color: var(--red);
   border: solid 2px var(--red);
   stroke: var(--red);
   color: var(--white);
+  font-weight: 900;
 
 }
 
