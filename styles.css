@@ -140,7 +140,7 @@ nav a{
   padding: 5%;
   text-decoration:none;
 }
-nav a:hover, header svg:hover,#submit:hover, footer img:hover {
+nav a:hover, header svg:hover,#submit:hover, footer img:hover,  {
   stroke: var(--yellow);
   color: var(--yellow);
 }
@@ -149,7 +149,7 @@ nav a:hover {
   border-bottom: solid 2px var(--yellow);
 }
 
-.view-more-btn:hover{
+.view-more-btn:hover, #shop figure a:hover{
   background-color: var(--yellow);
   color: var(--black);
 }
@@ -273,6 +273,12 @@ main img {
 #shop img {
   width: 10em;
   border-radius: 50%;
+}
+
+#shop figure a {
+background-color:var(--blue);
+color: var(--white);
+padding: 5% 30%;
 }
 
 footer svg {
