@@ -90,418 +90,385 @@ table {
 	border-spacing: 0;
 }
 /* ------------------- GLOBAL STYLES  ------------------- */
-/*--------------compress css-------------*/
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #000000;
-  color: white;
-  padding: 8px;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  top: 0;
-}
-
-header, footer {
-    width: 100%;
-}
-
-header {
-    background-color: var(--white);
-    display:grid;
-    align-items: center;
-    grid-template-columns:2fr 5fr 1fr 1fr; 
-}
-
-footer {
-    height: auto;
-    text-align: left;
-    padding: 3rem;
-    background-color: var(--brown);
-  display: grid;
-  grid-template-areas: 
-  "h2 socmed"
-  "address socmed"
-  "small socmed";
-  grid-gap: 5%;
-}
-
-nav ul {
-  display: grid;
-  grid-template-columns:repeat(5, 1fr);
-}
-
-nav a{
-  color: var(--black);
-  stroke: var(--black);
-  padding: 5%;
-  text-decoration:none;
-}
-nav a:hover, header svg:hover, footer img:hover {
-  stroke: var(--yellow);
-  color: var(--yellow);
-}
-
-nav a:hover {
-  border-bottom: solid 2px var(--yellow);
-}
-
-.view-more-btn:hover, #shop figure a:hover, .button:hover, #submit:hover {
-  background-color: var(--yellow);
-  color: var(--black);
-}
-
-.active-page:hover{
-  border-bottom: solid 2px var(--yellow);
-}
-
-section {
-  padding: 5%;
-}
-
-h1 {
-  margin: 20%;
-  color: var(--black);
-  font-family: 'Public Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-}
-h2, h3, p, dt, dd, p, label, address, small {
-    color: var(--black);
-    font-family: 'Public Sans', sans-serif;
-    line-height: 1.5em;
-}
-
-h3 {
-  padding: 10%;
-}
-
-a{
-color: var(--black);
-font-family: 'Public Sans', sans-serif;
-line-height: 1.5em;
-text-decoration: none
-}
-
-h2, nav li {
-  font-family: 'Public Sans', sans-serif;
-  font-size: 3em;
-}
-
-body h2 {
-  text-align: center;
-}
-
-#weekly-ad h2, #weekly-ad p {
-  color: var(--white);
-  text-shadow: 5px 5px 10px var(--black);
-  padding: 2% 5%;
-}
-
-
-nav li {
-  font-size: 1em;
-  padding: 18px;
-  white-space: nowrap;
-}
-
-.sr-only{
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-
-h2 {
-  font-size: 2em;  
-  font-weight: 800;
-}
-
-p {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-small {
-  font-size:.75em;
-  font-style: italic;
-}
-
-main img {
-	display:block;
-	width:100%;
+  background:#000;
+  color:#fff;
+  left:0;
+  padding:8px;
+  position:absolute;
+  top:-40px;
+  z-index:100
   }
-
-  footer a, footer a:visited {
-	color:var(--green);
-	stroke:var(--green);
+  
+  .skip-link:focus {
+  top:0
   }
-
-
-	.active-page{
-		border-bottom: solid 2px var(--black);
-	}
-
-
-
-#weekly-ad {
-  background-image: url(./images/hero-800w.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -15em;
-  height: 60%;
-  text-align: center;
-}
-
-#coupons svg {
-  stroke: var(--black);
-}
-
-#shop img {
-  width: 10em;
-  border-radius: 50%;
-}
-
-#shop figure a {
-background-color:var(--blue);
-color: var(--white);
-padding: 5% 30%;
-}
-
-footer svg {
-  stroke: var(--black);
-  width: 15%;
-  height: 15%;
-}
-
-footer h2 {
-  text-align: left; 
-}
-
-.view-more-btn{
-  background-color: var(--blue);
-  padding: 15px 70px;
-}
-
-
-
-a.view-more-btn {
-  color: var(--white);
-  text-align: center;
-  display: block;
-  width: 30%;
-  margin: 0 auto;
-}
-
-
-.shop-grid-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  text-align: center;
-  padding: 50px 0px;
-  justify-items: center;
-}
-
-#coupons {
-background-color: var(--brown);
-color:white;
-}
-
-#coupons dt, #coupons dd {
-  font-size: 1.3em;
-}
-
-#coupons h2 {
-  grid-area: h2;
-}
-
-#coupons dt {
-  grid-area: expire;
-  text-align: right;
-}
-
-.coupon-details dd {
-  grid-area: desc;
-  padding: 10px;
-}
-
-#coupons p, #coupons h2, #coupons dd, #coupons dt, footer p, footer h2, footer address, footer small{
+  
+  header,footer {
+  width:100%
+  }
+  
+  header {
+  align-items:center;
+  background-color:var(--white);
+  display:grid;
+  grid-template-columns:2fr 5fr 1fr 1fr
+  }
+  
+  footer {
+  background-color:var(--brown);
+  display:grid;
+  grid-gap:5%;
+  grid-template-areas:"h2 socmed" "address socmed" "small socmed";
+  height:auto;
+  padding:3rem;
+  text-align:left
+  }
+  
+  nav ul {
+  display:grid;
+  grid-template-columns:repeat(5,1fr)
+  }
+  
+  nav a {
+  color:var(--black);
+  padding:5%;
+  stroke:var(--black);
+  text-decoration:none
+  }
+  
+  nav a:hover,header svg:hover,footer img:hover {
+  color:var(--yellow);
+  stroke:var(--yellow)
+  }
+  
+  .view-more-btn:hover,#shop figure a:hover,.button:hover,#submit:hover {
+  background-color:var(--yellow);
+  color:var(--black)
+  }
+  
+  section {
+  padding:5%
+  }
+  
+  h1 {
+  color:var(--black);
+  font-family:'Public Sans',sans-serif;
+  font-size:1em;
+  font-weight:700;
+  margin:20%
+  }
+  
+  h2,h3,p,dt,dd,p,label,address,small {
+  color:var(--black);
+  font-family:'Public Sans',sans-serif;
+  line-height:1.5em
+  }
+  
+  h3 {
+  padding:10%
+  }
+  
+  a {
+  color:var(--black);
+  font-family:'Public Sans',sans-serif;
+  line-height:1.5em;
+  text-decoration:none
+  }
+  
+  h2,nav li {
+  font-family:'Public Sans',sans-serif;
+  font-size:3em
+  }
+  
+  body h2 {
+  text-align:center
+  }
+  
+  #weekly-ad h2,#weekly-ad p {
   color:var(--white);
+  padding:2% 5%;
+  text-shadow:5px 5px 10px var(--black)
   }
-
-.coupon-details {
-display: grid;
-grid-template-areas: 
-"h2 expire"
-"desc desc";
-}
-
-picture img {
-  width: 50%;
-  height: auto;
-}
-
-.coupons-grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2%;
-  padding: 50px 0px;
-  justify-items: center;
-}
-
-.coupons-grid-container h2 {
-  text-align: left;
-  color: var(--white);
-}
-
-
-
-
-picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 2px var(--black);
-    background-color: var(--light-grey);
-}
-
-.saveMoney {
-  font-weight: 800;
-  font-size: 1.5em;
-  background-color: var(--green);
-  padding: 0% 1%;
-  width: 15%;
-  position: relative;
-  top: 9%;
-  right: 41.2%;
-  margin: 0 auto;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-family: 'Public Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 800;
-  background-color: var(--white);
-  color:  var(--green);
-  width: 30%;
-  height: 10%;
-}
-
-
-
-.button img{
-  width: 12%;
-  height: auto;
-}
-
-form {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center;
-}
-
-label, input{
-  display: flex;
-  flex-direction: row;
-  margin: 1% 1% 1% 1%;
-}
-
-input {
-  padding: 2% 0%;
-  border: solid 2px black;
-}
-
-
-.form-input {
-  display: inline-block;
-  padding: 0% 1%;
-}
-
-#form-grid-container {
-  padding-top: 2%;
-}
-
-#submit {
-  margin: 0 auto;
-  position: relative;
-  left: 24%;
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 5px 50px;
-  font-family: 'Public Sans';
-  border: none;
-}
-
-.menu {
-  visibility:hidden;
-  height: 0;
-}
-
-.menu, .cart {
-  stroke: var(--black);
-  stroke-width: 2;
-   fill: none;
-  stroke-linecap: round;
-   stroke-linejoin: round;
-   width: 15%;
-   height: auto;
-   padding: 1% 2%;
-}
-
-
-h1 a:focus, #submit:focus, footer a:focus, nav a:focus, .menu:focus, .cart:focus,
- .view-more-btn:focus, a.view-more-btn:focus, .button:focus, #shop figure a:focus{
-  background-color: var(--red);
-  border: solid 2px var(--red);
-  stroke: var(--white);
-  color: var(--white);
-  font-weight: 900;
-  outline: dashed 4px var(--green);
-}
-
-
-
-.socmed-icons img{
-  border: solid 2px var(--black);
-  border-radius: 50%;
-  background-color: var(--white);
-  width: 3%;
-  height: auto;
-  padding: 1%;
-  margin: 1%;
-}
-
-footer h2 {
-  grid-area: h2;
-}
-
-footer address{
-  grid-area: address;
-}
-
-footer small {
-  grid-area: small;
-}
-
-.socmed-icons {
-  grid-area: socmed;
-}
-
-
-
-
+  
+  nav li {
+  font-size:1em;
+  padding:18px;
+  white-space:nowrap
+  }
+  
+  .sr-only {
+  height:1px;
+  left:-10000px;
+  overflow:hidden;
+  position:absolute;
+  top:auto;
+  width:1px
+  }
+  
+  h2 {
+  font-size:2em;
+  font-weight:800
+  }
+  
+  p {
+  font-size:1.5em;
+  margin:0 auto;
+  text-align:center;
+  width:60%
+  }
+  
+  small {
+  font-size:.75em;
+  font-style:italic
+  }
+  
+  main img {
+  display:block;
+  width:100%
+  }
+  
+  footer a,footer a:visited {
+  color:var(--green);
+  stroke:var(--green)
+  }
+  
+  .active-page {
+  border-bottom:solid 2px var(--black)
+  }
+  
+  #weekly-ad {
+  background-image:url(./images/hero-800w.jpg);
+  background-position-y:-15em;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:60%;
+  text-align:center
+  }
+  
+  #coupons svg {
+  stroke:var(--black)
+  }
+  
+  #shop img {
+  border-radius:50%;
+  width:10em
+  }
+  
+  #shop figure a {
+  background-color:var(--blue);
+  color:var(--white);
+  padding:5% 30%
+  }
+  
+  footer svg {
+  height:15%;
+  stroke:var(--black);
+  width:15%
+  }
+  
+  footer h2 {
+  grid-area:h2;
+  text-align:left
+  }
+  
+  .view-more-btn {
+  background-color:var(--blue);
+  padding:15px 70px
+  }
+  
+  a.view-more-btn {
+  color:var(--white);
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  width:30%
+  }
+  
+  .shop-grid-container {
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  justify-items:center;
+  padding:50px 0;
+  text-align:center
+  }
+  
+  #coupons {
+  background-color:var(--brown);
+  color:#fff
+  }
+  
+  #coupons dt,#coupons dd {
+  font-size:1.3em
+  }
+  
+  #coupons h2 {
+  grid-area:h2
+  }
+  
+  #coupons dt {
+  grid-area:expire;
+  text-align:right
+  }
+  
+  .coupon-details dd {
+  grid-area:desc;
+  padding:10px
+  }
+  
+  #coupons p,#coupons h2,#coupons dd,#coupons dt,footer p,footer h2,footer address,footer small {
+  color:var(--white)
+  }
+  
+  .coupon-details {
+  display:grid;
+  grid-template-areas:"h2 expire" "desc desc"
+  }
+  
+  picture img {
+  height:auto;
+  width:50%
+  }
+  
+  .coupons-grid-container {
+  display:grid;
+  grid-gap:2%;
+  grid-template-columns:repeat(2,1fr);
+  justify-items:center;
+  padding:50px 0
+  }
+  
+  .coupons-grid-container h2 {
+  color:var(--white);
+  text-align:left
+  }
+  
+  picture {
+  align-items:center;
+  background-color:var(--light-grey);
+  border:solid 2px var(--black);
+  display:flex;
+  justify-content:center
+  }
+  
+  .saveMoney {
+  background-color:var(--green);
+  font-size:1.5em;
+  font-weight:800;
+  margin:0 auto;
+  padding:0 1%;
+  position:relative;
+  right:41.2%;
+  top:9%;
+  width:15%
+  }
+  
+  .button {
+  align-items:center;
+  background-color:var(--white);
+  border-radius:10px;
+  color:var(--green);
+  display:flex;
+  font-family:'Public Sans',sans-serif;
+  font-size:1em;
+  font-weight:800;
+  height:10%;
+  justify-content:center;
+  width:30%
+  }
+  
+  .button img {
+  height:auto;
+  width:12%
+  }
+  
+  form {
+  margin:0 auto;
+  text-align:center;
+  width:60%
+  }
+  
+  label,input {
+  display:flex;
+  flex-direction:row;
+  margin:1%
+  }
+  
+  input {
+  border:solid 2px #000;
+  padding:2% 0
+  }
+  
+  .form-input {
+  display:inline-block;
+  padding:0 1%
+  }
+  
+  #form-grid-container {
+  padding-top:2%
+  }
+  
+  #submit {
+  background-color:var(--blue);
+  border:none;
+  color:var(--white);
+  font-family:'Public Sans';
+  left:24%;
+  margin:0 auto;
+  padding:5px 50px;
+  position:relative
+  }
+  
+  .menu {
+  height:0;
+  visibility:hidden
+  }
+  
+  .menu,.cart {
+  fill:none;
+  height:auto;
+  padding:1% 2%;
+  stroke:var(--black);
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:2;
+  width:15%
+  }
+  
+  h1 a:focus,#submit:focus,footer a:focus,nav a:focus,.menu:focus,.cart:focus,.view-more-btn:focus,a.view-more-btn:focus,.button:focus,#shop figure a:focus {
+  background-color:var(--red);
+  border:solid 2px var(--red);
+  color:var(--white);
+  font-weight:900;
+  outline:dashed 4px var(--green);
+  stroke:var(--white)
+  }
+  
+  .socmed-icons img {
+  background-color:var(--white);
+  border:solid 2px var(--black);
+  border-radius:50%;
+  height:auto;
+  margin:1%;
+  padding:1%;
+  width:3%
+  }
+  
+  footer address {
+  grid-area:address
+  }
+  
+  footer small {
+  grid-area:small
+  }
+  
+  .socmed-icons {
+  grid-area:socmed
+  }
+  
+  nav a:hover,.active-page:hover {
+  border-bottom:solid 2px var(--yellow)
+  }
 
   /*--------------MEDIA QUERIES------------------------*/
 
