@@ -106,7 +106,7 @@ footer {
     height: auto;
     text-align: left;
     padding: 3rem;
-    background-color: var(--light-grey);
+    background-color: var(--brown);
   display: grid;
   grid-template-areas: 
   "h2 socmed"
@@ -120,14 +120,28 @@ nav ul {
   grid-template-columns:repeat(5, 1fr);
 }
 
-nav a, header svg {
+nav a{
   color: var(--black);
+  stroke: var(--black);
   padding: 5px;
   text-decoration:none;
 }
-nav a:hover, header svg:hover {
+nav a:hover, header svg:hover,#submit:hover, footer img:hover {
   stroke: var(--yellow);
   color: var(--yellow);
+}
+
+nav a:hover {
+  border-bottom: solid 2px var(--yellow);
+}
+
+.view-more-btn:hover{
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.active-page:hover{
+  border-bottom: solid 2px var(--yellow);
 }
 
 section {
@@ -185,9 +199,6 @@ nav li {
   overflow: hidden;
 }
 
-header img {
-  stroke: var(--black);
-}
 
 #menu {
   visibility:hidden;
@@ -215,7 +226,7 @@ main img {
 	width:100%;
   }
 
-  footer a, footer a:visited, footer a:focus, footer img:hover {
+  footer a, footer a:visited {
 	color:var(--green);
 	stroke:var(--green);
   }
@@ -224,6 +235,8 @@ main img {
 	.active-page{
 		border-bottom: solid 2px var(--black);
 	}
+
+
 
 #weekly-ad {
   background-image: url(./images/hero-800w.jpg);
@@ -257,10 +270,7 @@ footer h2 {
   padding: 10px 70px;
 }
 
-.view-more-btn:hover{
-  background-color: var(--yellow);
-  color: var(--black);
-}
+
 
 a.view-more-btn {
   color: var(--white);
@@ -280,8 +290,13 @@ a.view-more-btn {
 }
 
 #coupons {
-background-color: var(--light-grey);
+background-color: var(--brown);
+color:white;
 }
+
+#coupons p, #coupons h2, #coupons dd, #coupons dt, footer p, footer h2, footer address, footer small{
+  color:black;
+  }
 
 #dressing img, #honey img, #marinara img, #mustard img {
   width: 50%;
@@ -298,25 +313,29 @@ background-color: var(--light-grey);
 
 .coupons-grid-container h2 {
   text-align: left;
+  color: var(--white);
 }
+
+
 
 picture {
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid 2px var(--black);
+    background-color: var(--light-grey);
 }
 
 .saveMoney {
   font-weight: 800;
   font-size: 30px;
-  color: var(--white);
-  background-color: var(--blue);
+  color: var(--black);
+  background-color: var(--green);
   padding: 0px 10px;
   width: 100px;
   position: relative;
   top: 45px;
-  left: -259px;
+  left: -276px;
   margin: 0 auto;
 }
 
@@ -328,11 +347,15 @@ button {
   padding: 5px 60px;
   font-family: 'Public Sans', sans-serif;
   font-size: 1em;
+  font-weight: 800;
+  background-color: var(--white);
+  color:  var(--green);
 }
 
 button img{
   position: relative;
   right: 30px;
+  stroke:  var(--green)
 }
 
 form {
@@ -370,6 +393,31 @@ background-color: var(--black);
 color: var(--white);
 padding: 2px 50px;
 font-family: 'Public Sans';
+}
+
+h1:focus, #submit:focus, footer a:focus, nav a:focus, .icon-tabler-shopping-cart:focus,
+ .view-more-btn:focus, a.view-more-btn:focus, button:focus{
+  background-color: var(--red);
+  border: solid 2px var(--red);
+  stroke: var(--red);
+  color: var(--white);
+
+}
+
+header svg {
+  stroke: var(--black);
+  stroke-width: 2;
+   fill: none;
+  stroke-linecap: round;
+   stroke-linejoin: round;
+   width: 24;
+  height: 24;
+  padding: 5px;
+}
+
+.icon-tabler-shopping-cart:focus, .icon-tabler-menu:focus {
+  stroke: var(--white);
+  background-color: var(--red);
 }
 
 .socmed-icons img{
