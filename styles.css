@@ -140,7 +140,7 @@ nav a{
   padding: 5%;
   text-decoration:none;
 }
-nav a:hover, header svg:hover,#submit:hover, footer img:hover,  {
+nav a:hover, header svg:hover, footer img:hover {
   stroke: var(--yellow);
   color: var(--yellow);
 }
@@ -149,7 +149,7 @@ nav a:hover {
   border-bottom: solid 2px var(--yellow);
 }
 
-.view-more-btn:hover, #shop figure a:hover{
+.view-more-btn:hover, #shop figure a:hover, .button:hover, #submit:hover {
   background-color: var(--yellow);
   color: var(--black);
 }
@@ -450,7 +450,7 @@ input {
 }
 
 h1:focus, #submit:focus, footer a:focus, nav a:focus, .icon-tabler-shopping-cart:focus,
- .view-more-btn:focus, a.view-more-btn:focus, .button:focus, #shop a:focus{
+ .view-more-btn:focus, a.view-more-btn:focus, .button:focus, #shop figure a:focus{
   background-color: var(--red);
   border: solid 2px var(--red);
   stroke: var(--red);
