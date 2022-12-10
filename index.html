@@ -56,31 +56,31 @@
 <h2>Shop Categories</h2>
 <div class="shop-grid-container">
 <figure id="meat">
-<a href ="#" title="browse meat section"><img src="./images/meat.jpg" alt="marbeled red raw meat" ></a>
+<a href ="#" aria-label="Browse the meat section (opens in same tab)" title="opens meat section"><img src="./images/meat.jpg" alt="Meat section"></a>
 <h3>Meat</h3>
 </figure>
 <figure id="seafood">
-  <a href ="#" title="browse seafood section"><img src="./images/seafood.jpg" alt="fish fillet dish" ></a>
+  <a href ="#" aria-label="Browse the seafood section (opens in same tab)" title="opens seafood section"><img src="./images/seafood.jpg" alt="Seafood section"></a>
   <h3>Seafood</h3>
   </figure>
   <figure id="dairy">
-    <a href ="#" title="browse dairy section"><img src="./images/dairy.jpg" alt="eggs and glass of milk" ></a>
+    <a href ="#" aria-label="Browse the dairy section (opens in same tab)" title="opens dairy section"><img src="./images/dairy.jpg" alt="Dairy section"></a>
     <h3>Dairy</h3>
     </figure>
 <figure id="produce">
-<a href ="#" title="browse produce section"><img src="./images/produce.jpg" alt="scattered apple slices" ></a>
+<a href ="#" aria-label="Browse the produce section (opens in same tab)" title="opens produce section"><img src="./images/produce.jpg" alt="Produce section" ></a>
 <h3>Produce</h3>
 </figure>
 <figure id="bakery">
-<a href ="#" title="browse bakery section"><img src="./images/bakery.jpg" alt="freshly baked chocolate chip muffins" ></a>
+<a href ="#" aria-label="Browse the bakery section (opens in same tab)" title="opens bakery section"><img src="./images/bakery.jpg" alt="Bakery section"></a>
 <h3>Bakery</h3>
 </figure>
 <figure id="beverage">
-<a href ="#" title="browse beverage section"><img src="./images/beverages.jpg" alt="scattered lemon slices in lemon tea" ></a>
+<a href ="#" aria-label="Browse the beverages section (opens in same tab)" title="opens beverages section"><img src="./images/beverages.jpg" alt="Beverages section"></a>
 <h3>Beverages</h3>
 </figure>
 </div>
-<a href="#" class="view-more-btn" >View all</a>
+<a href="#" class="view-more-btn">View all Categories</a>
 </section>
 
 <section id="coupons">
@@ -93,8 +93,9 @@
 <picture>
   <source media="(max-width: 319px)" srcset="dressing-150w.png">
   <source media="(min-width: 1920px)" srcset="dressing-700w.png">
-  <img src="./images/dressing-700w.png" alt="Frying pan with vegetables around it">
+  <img src="./images/dressing-700w.png" alt="Bottle of salad dressing">
 </picture>
+<figcaption class="sr-only">Salad Dressing Coupon</figcaption>
 <div class="coupon-details">
 <h2>Salad Dressing</h2>
 <dl>
@@ -103,17 +104,17 @@
 </dl>
 
 </div>
-<a href="#" class="button"><img 
-  src="./images/scissors.svg"
-  alt="scissors to indicate coupon clipping">Clip</a>
+<a href="#" role="button" title="Save coupon" aria-label="Save salad dressing coupon" class="button"><img 
+  src="./images/scissors.svg">Clip</a>
 </figure>
 <figure>
 <p class="saveMoney">Save $</p>
 <picture>
   <source media="(max-width: 319px)" srcset="honey-150w.png">
   <source media="(min-width: 1920px)" srcset="honey-700w.png">
-  <img src="./images/honey-700w.png" alt="honey">
+  <img src="./images/honey-700w.png" alt="Bottle of honey">
 </picture>
+<figcaption class="sr-only">Honey Coupon</figcaption>
 <div class="coupon-details">
 <h2>Honey</h2>
 <dl>
@@ -122,9 +123,8 @@
 </dl>
 
 </div>
-<a href="#" class="button"><img 
-src="./images/scissors.svg"
-  alt="scissors to indicate coupon clipping">Clip</a>
+<a href="#" role="button" title="Save coupon" aria-label="Save honey coupon" class="button"><img 
+src="./images/scissors.svg">Clip</a>
 </figure>
 
 <figure>
@@ -132,8 +132,9 @@ src="./images/scissors.svg"
 <picture>
 <source media="(max-width: 319px)" srcset="marinara-150w.png">
 <source media="(min-width: 1920px)" srcset="marinara-700w.png">
-<img src="./images/marinara-700w.png" alt="marinara sauce">
+<img src="./images/marinara-700w.png" alt="Bottle of marinara sauce">
 </picture>
+<figcaption class="sr-only">Marinara Sauce Coupon</figcaption>
 <div class="coupon-details">
 <h2>Marinara</h2>
 <dl>
@@ -142,9 +143,8 @@ src="./images/scissors.svg"
 </dl>
 
 </div>
-<a href="#" class="button"><img 
-  src="./images/scissors.svg"
-  alt="scissors to indicate coupon clipping">Clip</a>
+<a href="#" role="button" title="Save coupon" aria-label="Save marinara sauce coupon" class="button"><img 
+  src="./images/scissors.svg">Clip</a>
 </figure>
 
 <figure>
@@ -152,8 +152,9 @@ src="./images/scissors.svg"
 <picture>
 <source media="(max-width: 319px)" srcset="mustard-150w.png">
 <source media="(min-width: 1920px)" srcset="mustard-700w.png">
-<img src="./images/mustard-700w.png" alt="mustard">
+<img src="./images/mustard-700w.png" alt="Bottle of mustard">
 </picture>
+<figcaption class="sr-only">Mustard Coupon</figcaption>
 <div class="coupon-details">
 <h2>Mustard</h2>
 <dl>
@@ -162,9 +163,8 @@ src="./images/scissors.svg"
 </dl>
 
 </div>
-<a href="#" class="button"><img 
-  src="./images/scissors.svg"
-  alt="scissors to indicate coupon clipping">Clip</a>
+<a href="#" role="button" title="Save coupon" aria-label="Save mustard coupon" class="button"><img 
+  src="./images/scissors.svg">Clip</a>
 </figure>
 </div>
  </section>
@@ -203,19 +203,14 @@ src="./images/scissors.svg"
     All rights reserved.</small>
     <div class="socmed-icons">
   <h2 class="sr-only">Social Media Links</h2>
-    <a href ="#" aria-label="Visit our Facebook page">
-      <img src="./images/brand-facebook.svg" alt="facebook icon" height="15"
-      width="15"></a>
-
-    <a href ="#" aria-label="Email us">
-      <img src="./images/mail.svg" alt="envelope icon to indicate messaging" height="15"
-      width="15"></a>
-    <a href ="#" aria-label="Follow us on Twitter">
-      <img src="./images/brand-twitter.svg" alt="twitter bird icon" height="15"
-      width="15"></a>
-    <a href ="#" aria-label="Visit our Instagram page">
-      <img src="./images/brand-instagram.svg" alt="instagram icon" height="15"
-      width="15"></a>
+    <a href ="#" target="blank" aria-label="Visit our Facebook page (opens in new window)" title="opens Facebook in new window">
+      <img src="./images/brand-facebook.svg" alt="All Foods Grocery Facebook page"></a>
+      <a href ="#" target="blank" aria-label="Send us an email (opens in new window)" title="opens Gmail in new window">
+      <img src="./images/mail.svg" alt="Send an email"></a>
+    <a href ="#" target="blank" aria-label="Visit our Twitter account (opens in new window)" title="opens Twitter in new window">
+      <img src="./images/brand-twitter.svg" alt="All Foods Grocery Twitter account"></a>
+      <a href ="#" target="blank" aria-label="Visit our Instagram account (opens in new window)" title="opens Instagram in new window">
+      <img src="./images/brand-instagram.svg" alt="All Foods Grocery Instagram account"></a>
     </div>
 </footer>
 </body>
