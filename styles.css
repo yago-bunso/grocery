@@ -90,7 +90,7 @@ table {
 	border-spacing: 0;
 }
 /* ------------------- GLOBAL STYLES  ------------------- */
-
+/*--------------compress css-------------*/
 .skip-link {
   position: absolute;
   top: -40px;
