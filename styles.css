@@ -218,11 +218,6 @@ nav li {
 }
 
 
-#menu {
-  visibility:hidden;
-  height: 0;
-}
-
 h2 {
   font-size: 2em;  
   font-weight: 800;
@@ -449,31 +444,34 @@ input {
   border: none;
 }
 
-h1:focus, #submit:focus, footer a:focus, nav a:focus, .icon-tabler-shopping-cart:focus,
- .view-more-btn:focus, a.view-more-btn:focus, .button:focus, #shop figure a:focus{
-  background-color: var(--red);
-  border: solid 2px var(--red);
-  stroke: var(--red);
-  color: var(--white);
-  font-weight: 900;
-
+.menu {
+  visibility:hidden;
+  height: 0;
 }
 
-header svg {
+.menu, .cart {
   stroke: var(--black);
   stroke-width: 2;
    fill: none;
   stroke-linecap: round;
    stroke-linejoin: round;
    width: 15%;
-  height: 15%;
-  padding: 1%;
+   height: auto;
+   padding: 1% 2%;
 }
 
-.icon-tabler-shopping-cart:focus, .icon-tabler-menu:focus {
-  stroke: var(--white);
+
+h1 a:focus, #submit:focus, footer a:focus, nav a:focus, .menu:focus, .cart:focus,
+ .view-more-btn:focus, a.view-more-btn:focus, .button:focus, #shop figure a:focus{
   background-color: var(--red);
+  border: solid 2px var(--red);
+  stroke: var(--white);
+  color: var(--white);
+  font-weight: 900;
+  outline: dashed 4px var(--green);
 }
+
+
 
 .socmed-icons img{
   border: solid 2px var(--black);
