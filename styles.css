@@ -1,3 +1,8 @@
+/*-----------I really tried my best to make this work, but I'm really not the greatest with breakpoints...I want to practice more!---------*/
+/*------------I think the accessibility I added is substiantial enough for a beginning, if I'm not jinxing myself right now...-------------*/
+
+
+
 /*----------Google Fonts import----------*/
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;800&display=swap');
 /*--font-family: 'Public Sans', sans-serif;--*/
@@ -121,9 +126,17 @@ nav a {
 	text-decoration:none;
 }
 
+nav {
+	grid-area: nav;
+}
+
 .menu {
 	height:0;
 	visibility:hidden;
+}
+
+.cart {
+	grid-area: cart;
 }
 
 .menu, .cart {
@@ -168,10 +181,6 @@ a {
 	line-height:1.5em;
 	text-decoration:none;
 }
-
-
-
-
 
 
 .sr-only {
@@ -267,6 +276,10 @@ a.view-more-btn {
 	text-align:center;
 }
 
+.shop-grid-container {
+	grid-template-columns: repeat(3,1fr);
+}
+
 #coupons {
 	background-color:var(--brown);
 	color:#fff;
@@ -305,6 +318,12 @@ a.view-more-btn {
 	grid-template-areas:"h2 expire" "desc desc" "btn btn";
 }
 
+.coupons-grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	}
+
 picture img {
 	height:auto;
 	width:50%;
@@ -326,10 +345,10 @@ picture {
 	margin:0 auto;
 	padding:0 1%;
 	position:relative;
-	right:41.2%;
-	top:9%;
-	width:15%
-}
+	right: 36.3%;
+    top: 13%;
+    width: 3.5em;
+	}
 
 .button {
 	align-items:center;
@@ -436,9 +455,23 @@ nav a:hover,.active-page:hover {
 }
 
 /*--------------MEDIA QUERIES------------------------*/
+
+
+
 @media screen and (max-width:1024px) {
+	header {
+		display: grid;
+		grid-template-areas: "h1 nav cart";
+		grid-template-columns: 2fr 5fr 1fr;
+	}
+}
+
+
+@media screen and (min-width:1024px) {
 header {
 	display: grid;
+	grid-template-areas: "h1 nav cart";
+	grid-template-columns: 2fr 5fr 1fr;
 }
 
 
@@ -466,9 +499,6 @@ header {
 		visibility: visible;
 		grid-area: menu;
 	}
-	.cart {
-		grid-area: cart;
-	}
 
 	.menu, .cart {
 	    width: 1.5em;
@@ -493,21 +523,6 @@ header {
 	#weekly-ad a {
 		position: relative;
 		top: 50%;
-	}
-
-	.shop-grid-container {
-		grid-template-columns: repeat(3,1fr);
-	}
-	.coupons-grid-container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
-	}
-
-	.saveMoney {
-		right: 36.3%;
-    	top: 13%;
-    	width: 3.5em;
 	}
 
 	.button {
@@ -535,7 +550,7 @@ header {
 		display: grid;
 		grid-template-areas: 
 		"h1 cart menu";
-		grid-template-columns: 3fr .3fr .4fr
+		grid-template-columns: 3fr .3fr .4fr;
 		height:75px;
 	}
 
@@ -552,9 +567,6 @@ header {
 	.menu {
 		visibility: visible;
 		grid-area: menu;
-	}
-	.cart {
-		grid-area: cart;
 	}
 
 	.menu, .cart {
@@ -671,4 +683,3 @@ header {
 		margin: 0 auto;
 	}
 }
-
